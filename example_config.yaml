@@ -1,0 +1,24 @@
+machine: CAT-M1
+version: 1.0.0
+
+families:
+  - local
+  - derivatives
+  - relations
+  - contradiction
+  - coherence
+  - memory
+  - recursion
+  - interactions
+
+temporal_horizons:
+  - 3
+  - 7
+  - 23
+
+primary_metric:
+  name: brier_score
+  contribution: ablated_minus_full
+
+freeze:
+  hash: sha256

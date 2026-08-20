@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CAT Ablation Result",
+  "type": "object",
+  "required": [
+    "machine_version",
+    "candidate_id",
+    "ablation",
+    "metric",
+    "full_value",
+    "ablated_value"
+  ],
+  "properties": {
+    "machine_version": {
+      "type": "string"
+    },
+    "candidate_id": {
+      "type": "string"
+    },
+    "ablation": {
+      "type": "string"
+    },
+    "metric": {
+      "type": "string"
+    },
+    "full_value": {
+      "type": "number"
+    },
+    "ablated_value": {
+      "type": "number"
+    },
+    "ablation_penalty": {
+      "type": "number"
+    }
+  }
+}
